@@ -28,3 +28,23 @@
         ```
 
         This will install all dependencies listed in `requirements.txt` into your conda environment.
+
+### Workflow--ML pipeline
+
+1. Data Ingestion: Collect and preprocess data for analysis.
+2. Data Transformation and validation: Cleanse and transform raw data into a usable format.
+3. Model Training: Train machine learning models on transformed data.
+4. Model Evaluation: Assess model performance using appropriate metrics.
+5. Deployment: Deploy trained models for real-world applications or predictions.
+
+
+## Workflows
+
+1.update config.yaml
+2.Update schema.yaml
+3.Update params.yaml
+4.Update entity
+5.Update configuration manager
+6.Update components
+7.Update pipeline.py
+8.update main.py

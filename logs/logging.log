@@ -1,0 +1,502 @@
+[2025-05-21 03:36:33,882] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 03:36:33,882] : ERROR : main :name 'DataIngestionPipeline' is not defined]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 9, in <module>
+    data_ingestion_pipeline = DataIngestionPipeline()
+NameError: name 'DataIngestionPipeline' is not defined
+[2025-05-21 03:36:54,527] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 03:36:54,528] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 03:36:54,529] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 03:36:54,529] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 03:36:54,529] : INFO : common :created directory at: artifacts]
+[2025-05-21 03:36:54,529] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 03:36:55,331] : INFO : data_ingestion :artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 80E8:141CA6:77622B:FC35CC:682CFCFE
+Accept-Ranges: bytes
+Date: Tue, 20 May 2025 22:06:55 GMT
+Via: 1.1 varnish
+X-Served-By: cache-nrt-rjtf7700073-NRT
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1747778815.012965,VS0,VE336
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: e28fb0dceb84c81f9af08737e2de801b1f82956a
+Expires: Tue, 20 May 2025 22:11:55 GMT
+Source-Age: 0
+
+]
+[2025-05-21 03:36:55,334] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 16:30:01,373] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 16:30:01,374] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:30:01,374] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:30:01,375] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:30:01,375] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:30:01,375] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 16:30:02,266] : INFO : data_ingestion :artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 7AA5:3CEAB9:7D71BA:1030A4D:682DB231
+Accept-Ranges: bytes
+Date: Wed, 21 May 2025 11:00:02 GMT
+Via: 1.1 varnish
+X-Served-By: cache-nrt-rjtf7700101-NRT
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1747825202.946419,VS0,VE301
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 6e0a9c793ad87c2829aa22ab88a8441e4a632dba
+Expires: Wed, 21 May 2025 11:05:02 GMT
+Source-Age: 0
+
+]
+[2025-05-21 16:30:02,270] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 16:30:02,270] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 16:30:02,273] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:30:02,273] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:30:02,275] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:30:02,275] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:30:02,275] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 16:30:02,276] : ERROR : main :"'ConfigBox' object has no attribute 'unzip_data_dir'"]
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 19, in <module>
+    data_validation_pipeline.initiate_data_validation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_validation_pipleline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_data_validation_config()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/config/configuration.py", line 38, in get_data_validation_config
+    unzip_data_dir=config.unzip_data_dir,
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_data_dir'"
+[2025-05-21 16:32:13,198] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 16:32:13,199] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:32:13,199] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:32:13,200] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:32:13,200] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:32:13,200] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 16:32:13,678] : INFO : data_ingestion :artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 7AA5:3CEAB9:7D71BA:1030A4D:682DB231
+Accept-Ranges: bytes
+Date: Wed, 21 May 2025 11:02:13 GMT
+Via: 1.1 varnish
+X-Served-By: cache-nrt-rjtf7700069-NRT
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1747825334.713437,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: f8d4235886bebe248fe750e89ecd347654ae55ed
+Expires: Wed, 21 May 2025 11:07:13 GMT
+Source-Age: 131
+
+]
+[2025-05-21 16:32:13,680] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 16:32:13,681] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 16:32:13,682] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:32:13,683] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:32:13,685] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:32:13,685] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:32:13,685] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 16:32:13,686] : ERROR : main :"'ConfigBox' object has no attribute 'unzip_data_dir'"]
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_data_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_data_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 19, in <module>
+    data_validation_pipeline.initiate_data_validation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_validation_pipleline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_data_validation_config()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/config/configuration.py", line 38, in get_data_validation_config
+    unzip_data_dir=config.unzip_data_dir,
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_data_dir'"
+[2025-05-21 16:33:48,554] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 16:33:48,555] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:33:48,555] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:33:48,556] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:33:48,556] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:33:48,556] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 16:33:48,556] : INFO : data_ingestion :File already exists]
+[2025-05-21 16:33:48,558] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 16:33:48,558] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 16:33:48,559] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:33:48,559] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:33:48,560] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:33:48,560] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:33:48,560] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 16:33:48,560] : ERROR : main :"'ConfigBox' object has no attribute 'status_file'"]
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'STATUS_FILE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'STATUS_FILE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'STATUS_FILE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'STATUS_FILE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'status_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'status_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'status_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 19, in <module>
+    data_validation_pipeline.initiate_data_validation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_validation_pipleline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_data_validation_config()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/config/configuration.py", line 39, in get_data_validation_config
+    STATUS_FILE=config.STATUS_FILE,
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'status_file'"
+[2025-05-21 16:35:02,618] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 16:35:02,619] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:35:02,619] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:35:02,620] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:35:02,620] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:35:02,620] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 16:35:02,620] : INFO : data_ingestion :File already exists]
+[2025-05-21 16:35:02,621] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 16:35:02,621] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 16:35:02,622] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:35:02,622] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:35:02,623] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:35:02,623] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:35:02,623] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 16:35:02,623] : ERROR : main :"'ConfigBox' object has no attribute 'all_schema'"]
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'all_schema'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'all_schema'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'all_schema'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'all_schema'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'all_schema'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'all_schema'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'all_schema'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 19, in <module>
+    data_validation_pipeline.initiate_data_validation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_validation_pipleline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_data_validation_config()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/config/configuration.py", line 40, in get_data_validation_config
+    all_schema=self.schema.all_schema
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'all_schema'"
+[2025-05-21 16:37:45,428] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 16:37:45,429] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:37:45,429] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:37:45,430] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:37:45,430] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:37:45,430] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 16:37:46,333] : INFO : data_ingestion :artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 7AA5:3CEAB9:7D71BA:1030A4D:682DB231
+Accept-Ranges: bytes
+Date: Wed, 21 May 2025 11:07:46 GMT
+Via: 1.1 varnish
+X-Served-By: cache-nrt-rjtf7700029-NRT
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1747825666.892068,VS0,VE266
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: a5f737d11fecc727112c26dd8c79b39d6e47a079
+Expires: Wed, 21 May 2025 11:12:46 GMT
+Source-Age: 0
+
+]
+[2025-05-21 16:37:46,334] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 16:37:46,334] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 16:37:46,335] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:37:46,336] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:37:46,338] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:37:46,339] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:37:46,339] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 16:37:46,339] : ERROR : main :DataValidationConfig.__init__() got an unexpected keyword argument 'unzip_data_dir']
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 19, in <module>
+    data_validation_pipeline.initiate_data_validation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_validation_pipleline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_data_validation_config()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/config/configuration.py", line 36, in get_data_validation_config
+    data_validation_config=DataValidationConfig(
+TypeError: DataValidationConfig.__init__() got an unexpected keyword argument 'unzip_data_dir'
+[2025-05-21 16:38:13,402] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 16:38:13,403] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:38:13,404] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:38:13,404] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:38:13,404] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:38:13,404] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 16:38:13,405] : INFO : data_ingestion :File already exists]
+[2025-05-21 16:38:13,405] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 16:38:13,405] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 16:38:13,406] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:38:13,406] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:38:13,407] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:38:13,407] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:38:13,407] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 16:38:13,407] : ERROR : main :DataValidationConfig.__init__() got an unexpected keyword argument 'unzip_data_dir']
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 19, in <module>
+    data_validation_pipeline.initiate_data_validation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_validation_pipleline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_data_validation_config()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/config/configuration.py", line 36, in get_data_validation_config
+    data_validation_config=DataValidationConfig(
+TypeError: DataValidationConfig.__init__() got an unexpected keyword argument 'unzip_data_dir'
+[2025-05-21 16:41:00,884] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 16:41:00,885] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:41:00,885] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:41:00,886] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:41:00,886] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:41:00,886] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 16:41:00,886] : INFO : data_ingestion :File already exists]
+[2025-05-21 16:41:00,887] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 16:41:00,887] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 16:41:00,888] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:41:00,888] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:41:00,889] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:41:00,889] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:41:00,889] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 16:41:00,889] : ERROR : main :DataValidationConfig.__init__() got an unexpected keyword argument 'unzip_data_dir']
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 19, in <module>
+    data_validation_pipeline.initiate_data_validation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_validation_pipleline.py", line 15, in initiate_data_validation
+    data_validation_config=config.get_data_validation_config()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/config/configuration.py", line 36, in get_data_validation_config
+    data_validation_config=DataValidationConfig(
+TypeError: DataValidationConfig.__init__() got an unexpected keyword argument 'unzip_data_dir'
+[2025-05-21 16:42:00,270] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 16:42:00,271] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:42:00,271] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:42:00,272] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:42:00,272] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:42:00,272] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 16:42:00,272] : INFO : data_ingestion :File already exists]
+[2025-05-21 16:42:00,273] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 16:42:00,273] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 16:42:00,274] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 16:42:00,274] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 16:42:00,274] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 16:42:00,275] : INFO : common :created directory at: artifacts]
+[2025-05-21 16:42:00,275] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 16:42:00,287] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
