@@ -500,3 +500,543 @@ x====================x]
 [2025-05-21 16:42:00,287] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
 
 x====================x]
+[2025-05-21 18:48:19,071] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 18:48:19,072] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:48:19,072] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:48:19,073] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:48:19,073] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:48:19,073] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 18:48:19,853] : INFO : data_ingestion :artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FD78:12C224:266B5D:4C2BCE:682DD29B
+Accept-Ranges: bytes
+Date: Wed, 21 May 2025 13:18:19 GMT
+Via: 1.1 varnish
+X-Served-By: cache-nrt-rjtf7700102-NRT
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1747833500.524846,VS0,VE297
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0bba4d2980f7a63d238064354505a9153b9effeb
+Expires: Wed, 21 May 2025 13:23:19 GMT
+Source-Age: 0
+
+]
+[2025-05-21 18:48:19,855] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:48:19,855] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 18:48:19,857] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:48:19,857] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:48:19,858] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:48:19,858] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:48:19,859] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 18:48:19,871] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:48:19,872] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 18:48:19,873] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:48:19,873] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:48:19,874] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:48:19,874] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:48:19,874] : INFO : common :created directory at: artifacts/data_transformation]
+[2025-05-21 18:48:19,874] : ERROR : main :"'ConfigBox' object has no attribute 'unzip_dir'"]
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'unzip_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 14, in initiate_data_transformation
+    data_transformation_config=config.get_data_transformation_config()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/config/configuration.py", line 50, in get_data_transformation_config
+    unzip_dir=config.unzip_dir,
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_dir'"
+[2025-05-21 18:49:17,363] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 18:49:17,364] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:49:17,364] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:49:17,365] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:49:17,365] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:49:17,365] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 18:49:17,365] : INFO : data_ingestion :File already exists]
+[2025-05-21 18:49:17,366] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:49:17,366] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 18:49:17,367] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:49:17,367] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:49:17,367] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:49:17,368] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:49:17,368] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 18:49:17,375] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:49:17,375] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 18:49:17,376] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:49:17,376] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:49:17,377] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:49:17,377] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:49:17,377] : INFO : common :created directory at: artifacts/data_transformation]
+[2025-05-21 18:49:17,388] : INFO : data_transformation :Train and test data created]
+[2025-05-21 18:49:17,388] : INFO : data_transformation :(1199, 12)]
+[2025-05-21 18:49:17,388] : INFO : data_transformation :(400, 12)]
+[2025-05-21 18:49:17,388] : INFO : main :>>>>>> stage Data Transformation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:54:02,552] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 18:54:02,553] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:54:02,553] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:54:02,553] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:54:02,554] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:54:02,554] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 18:54:03,302] : INFO : data_ingestion :artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FD78:12C224:266B5D:4C2BCE:682DD29B
+Accept-Ranges: bytes
+Date: Wed, 21 May 2025 13:24:03 GMT
+Via: 1.1 varnish
+X-Served-By: cache-nrt-rjtf7700043-NRT
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1747833843.965740,VS0,VE282
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 3c21524d9b4279794e8a5e8cb51043906347f5f7
+Expires: Wed, 21 May 2025 13:29:03 GMT
+Source-Age: 0
+
+]
+[2025-05-21 18:54:03,305] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:54:03,305] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 18:54:03,308] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:54:03,308] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:54:03,310] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:54:03,310] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:54:03,310] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 18:54:03,324] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:54:03,325] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 18:54:03,325] : ERROR : main :Data Validation failed]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 24, in initiate_data_transformation
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 22, in initiate_data_transformation
+    raise Exception("Data Validation failed")
+Exception: Data Validation failed
+[2025-05-21 18:55:32,686] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 18:55:32,687] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:55:32,687] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:55:32,688] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:55:32,688] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:55:32,688] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 18:55:32,804] : INFO : data_ingestion :artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FD78:12C224:266B5D:4C2BCE:682DD29B
+Accept-Ranges: bytes
+Date: Wed, 21 May 2025 13:25:32 GMT
+Via: 1.1 varnish
+X-Served-By: cache-nrt-rjtf7700068-NRT
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1747833933.826686,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 29febdb98fc73803a71786255fcb83e74d80a444
+Expires: Wed, 21 May 2025 13:30:32 GMT
+Source-Age: 90
+
+]
+[2025-05-21 18:55:32,808] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:55:32,808] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 18:55:32,811] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:55:32,812] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:55:32,814] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:55:32,814] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:55:32,814] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 18:55:32,818] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:55:32,819] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 18:55:32,819] : ERROR : main :Data Validation failed]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 24, in initiate_data_transformation
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 22, in initiate_data_transformation
+    raise Exception("Data Validation failed")
+Exception: Data Validation failed
+[2025-05-21 18:56:19,996] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 18:56:19,997] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:56:19,997] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:56:19,998] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:56:19,998] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:56:19,998] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 18:56:19,998] : INFO : data_ingestion :File already exists]
+[2025-05-21 18:56:19,999] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:56:19,999] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 18:56:20,000] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:56:20,000] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:56:20,001] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:56:20,001] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:56:20,001] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 18:56:20,009] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:56:20,009] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 18:56:20,009] : ERROR : main :Data Validation failed]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 25, in initiate_data_transformation
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 23, in initiate_data_transformation
+    raise Exception("Data Validation failed")
+Exception: Data Validation failed
+[2025-05-21 18:57:22,800] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 18:57:22,801] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:57:22,802] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:57:22,802] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:57:22,802] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:57:22,803] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 18:57:22,803] : INFO : data_ingestion :File already exists]
+[2025-05-21 18:57:22,803] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:57:22,803] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 18:57:22,804] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:57:22,804] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:57:22,805] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:57:22,805] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:57:22,805] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 18:57:22,813] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:57:22,813] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 18:57:22,813] : ERROR : main :Data Validation failed]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 25, in initiate_data_transformation
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 23, in initiate_data_transformation
+    raise Exception("Data Validation failed")
+Exception: Data Validation failed
+[2025-05-21 18:58:47,306] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 18:58:47,307] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:58:47,308] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:58:47,308] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:58:47,309] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:58:47,309] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 18:58:47,309] : INFO : data_ingestion :File already exists]
+[2025-05-21 18:58:47,310] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:58:47,310] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 18:58:47,310] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 18:58:47,311] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 18:58:47,311] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 18:58:47,311] : INFO : common :created directory at: artifacts]
+[2025-05-21 18:58:47,312] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 18:58:47,319] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 18:58:47,319] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 18:58:47,319] : ERROR : main :Data Validation failed]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 25, in initiate_data_transformation
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 23, in initiate_data_transformation
+    raise Exception("Data Validation failed")
+Exception: Data Validation failed
+[2025-05-21 19:00:17,825] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:00:17,826] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:00:17,827] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:00:17,827] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:00:17,827] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:00:17,828] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:00:17,828] : INFO : data_ingestion :File already exists]
+[2025-05-21 19:00:17,828] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:00:17,828] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:00:17,829] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:00:17,829] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:00:17,830] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:00:17,830] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:00:17,830] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:00:17,837] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:00:17,837] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:00:17,838] : ERROR : main :Data Validation failed]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 26, in initiate_data_transformation
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 24, in initiate_data_transformation
+    raise Exception("Data Validation failed")
+Exception: Data Validation failed
+[2025-05-21 19:00:44,287] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:00:44,288] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:00:44,288] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:00:44,289] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:00:44,289] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:00:44,289] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:00:44,289] : INFO : data_ingestion :File already exists]
+[2025-05-21 19:00:44,290] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:00:44,290] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:00:44,291] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:00:44,291] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:00:44,292] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:00:44,292] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:00:44,292] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:00:44,299] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:00:44,299] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:00:44,299] : ERROR : main :Data Validation failed]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 26, in initiate_data_transformation
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 24, in initiate_data_transformation
+    raise Exception("Data Validation failed")
+Exception: Data Validation failed
+[2025-05-21 19:00:57,261] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:00:57,262] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:00:57,263] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:00:57,263] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:00:57,263] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:00:57,264] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:00:57,264] : INFO : data_ingestion :File already exists]
+[2025-05-21 19:00:57,264] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:00:57,264] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:00:57,265] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:00:57,265] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:00:57,266] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:00:57,266] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:00:57,266] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:00:57,274] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:00:57,274] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:00:57,274] : ERROR : main :Data Validation failed]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 27, in initiate_data_transformation
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 25, in initiate_data_transformation
+    raise Exception("Data Validation failed")
+Exception: Data Validation failed
+[2025-05-21 19:01:12,830] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:01:12,831] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:01:12,831] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:01:12,832] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:01:12,832] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:01:12,832] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:01:12,832] : INFO : data_ingestion :File already exists]
+[2025-05-21 19:01:12,833] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:01:12,833] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:01:12,834] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:01:12,834] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:01:12,835] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:01:12,835] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:01:12,835] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:01:12,842] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:01:12,842] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:01:12,842] : ERROR : main :Data Validation failed]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 28, in initiate_data_transformation
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 26, in initiate_data_transformation
+    raise Exception("Data Validation failed")
+Exception: Data Validation failed
+[2025-05-21 19:01:35,757] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:01:35,758] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:01:35,759] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:01:35,759] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:01:35,760] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:01:35,760] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:01:35,760] : INFO : data_ingestion :File already exists]
+[2025-05-21 19:01:35,760] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:01:35,760] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:01:35,761] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:01:35,761] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:01:35,762] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:01:35,762] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:01:35,762] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:01:35,767] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:01:35,767] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:01:35,767] : ERROR : main :Data Validation failed]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 28, in initiate_data_transformation
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 26, in initiate_data_transformation
+    raise Exception("Data Validation failed")
+Exception: Data Validation failed
+[2025-05-21 19:02:45,833] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:02:45,834] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:02:45,834] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:02:45,835] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:02:45,835] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:02:45,835] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:02:45,835] : INFO : data_ingestion :File already exists]
+[2025-05-21 19:02:45,836] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:02:45,836] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:02:45,836] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:02:45,837] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:02:45,837] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:02:45,837] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:02:45,837] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:02:45,846] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:02:45,846] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:02:45,846] : ERROR : main :Data Validation failed]
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 32, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 28, in initiate_data_transformation
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/data_transformation_pipeline.py", line 26, in initiate_data_transformation
+    raise Exception("Data Validation failed")
+Exception: Data Validation failed
+[2025-05-21 19:05:26,914] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:05:26,915] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:05:26,915] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:05:26,916] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:05:26,916] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:05:26,916] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:05:26,916] : INFO : data_ingestion :File already exists]
+[2025-05-21 19:05:26,917] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:05:26,917] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:05:26,918] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:05:26,918] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:05:26,919] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:05:26,919] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:05:26,919] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:05:26,926] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:05:26,926] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:05:26,927] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:05:26,927] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:05:26,928] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:05:26,928] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:05:26,928] : INFO : common :created directory at: artifacts/data_transformation]
+[2025-05-21 19:05:26,937] : INFO : data_transformation :Train and test data created]
+[2025-05-21 19:05:26,937] : INFO : data_transformation :(1199, 12)]
+[2025-05-21 19:05:26,937] : INFO : data_transformation :(400, 12)]
+[2025-05-21 19:05:26,937] : INFO : main :>>>>>> stage Data Transformation stage completed <<<<<<
+
+x====================x]

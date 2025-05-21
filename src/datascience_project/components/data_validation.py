@@ -4,10 +4,10 @@ from src.datascience_project import logger
 import zipfile
 from src.datascience_project.entity.config_entity import DataIngestionConfig, DataValidationConfig
 import pandas as pd
-
+from src.datascience_project.config.configuration import ConfigurationManager
 
 class DataValidation:
-    def __init__(self, config: DataIngestionConfig):
+    def __init__(self, config: DataValidationConfig):
         self.config = config
 
     def validate_all_columns(self)->bool:
