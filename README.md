@@ -34,7 +34,7 @@
 1. Data Ingestion: Collect and preprocess data for analysis.
 2. Data Transformation and validation: Cleanse and transform raw data into a usable format.
 3. Model Training: Train machine learning models on transformed data.
-4. Model Evaluation: Assess model performance using appropriate metrics.
+4. Model Evaluation: Assess model performance using appropriate metrics. -- ML Flow and dagshub
 5. Deployment: Deploy trained models for real-world applications or predictions.
 
 

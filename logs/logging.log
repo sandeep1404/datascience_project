@@ -1040,3 +1040,282 @@ x====================x]
 [2025-05-21 19:05:26,937] : INFO : main :>>>>>> stage Data Transformation stage completed <<<<<<
 
 x====================x]
+[2025-05-21 19:35:25,656] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:35:25,658] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:35:25,658] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:35:25,659] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:35:25,659] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:35:25,659] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:35:26,950] : INFO : data_ingestion :artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FD78:12C224:266B5D:4C2BCE:682DD29B
+Accept-Ranges: bytes
+Date: Wed, 21 May 2025 14:05:26 GMT
+Via: 1.1 varnish
+X-Served-By: cache-nrt-rjtf7700057-NRT
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1747836326.478924,VS0,VE471
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 5bc19a342b79a22f5eb267267ffbfde292dc4ea8
+Expires: Wed, 21 May 2025 14:10:26 GMT
+Source-Age: 0
+
+]
+[2025-05-21 19:35:26,953] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:35:26,953] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:35:26,954] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:35:26,955] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:35:26,956] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:35:26,956] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:35:26,956] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:35:26,968] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:35:26,969] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:35:26,970] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:35:26,970] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:35:26,971] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:35:26,971] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:35:26,971] : INFO : common :created directory at: artifacts/data_transformation]
+[2025-05-21 19:35:26,980] : INFO : data_transformation :Train and test data created]
+[2025-05-21 19:35:26,980] : INFO : data_transformation :(1199, 12)]
+[2025-05-21 19:35:26,980] : INFO : data_transformation :(400, 12)]
+[2025-05-21 19:35:26,980] : INFO : main :>>>>>> stage Data Transformation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:37:25,513] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:37:25,514] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:37:25,515] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:37:25,515] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:37:25,516] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:37:25,516] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:37:25,516] : INFO : data_ingestion :File already exists]
+[2025-05-21 19:37:25,517] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:37:25,517] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:37:25,518] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:37:25,518] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:37:25,519] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:37:25,519] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:37:25,519] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:37:25,526] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:37:25,526] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:37:25,527] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:37:25,527] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:37:25,528] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:37:25,528] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:37:25,528] : INFO : common :created directory at: artifacts/data_transformation]
+[2025-05-21 19:37:25,537] : INFO : data_transformation :Train and test data created]
+[2025-05-21 19:37:25,537] : INFO : data_transformation :(1199, 12)]
+[2025-05-21 19:37:25,537] : INFO : data_transformation :(400, 12)]
+[2025-05-21 19:37:25,537] : INFO : main :>>>>>> stage Data Transformation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:37:25,537] : INFO : main :>>>>>> stage Model Trainer stage started <<<<<<]
+[2025-05-21 19:37:25,538] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:37:25,538] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:37:25,539] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:37:25,539] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:37:25,539] : INFO : common :created directory at: artifacts/model_trainer]
+[2025-05-21 19:37:25,539] : ERROR : main :"'ConfigBox' object has no attribute 'target_column'"]
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'target_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'target_column'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'target_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'target_column'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 594, in box.box.Box.__getitem__
+KeyError: 'target_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 633, in box.box.Box.__getattr__
+  File "box/box.py", line 621, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'target_column'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 635, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'target_column'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 43, in <module>
+    model_trainer_pipeline = config.get_model_trainer_config()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/config/configuration.py", line 67, in get_model_trainer_config
+    target_column=schema.target_column
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 649, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'target_column'"
+[2025-05-21 19:38:37,864] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:38:37,866] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:38:37,866] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:38:37,867] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:38:37,867] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:38:37,867] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:38:37,867] : INFO : data_ingestion :File already exists]
+[2025-05-21 19:38:37,868] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:38:37,868] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:38:37,869] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:38:37,869] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:38:37,870] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:38:37,870] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:38:37,870] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:38:37,877] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:38:37,877] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:38:37,878] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:38:37,878] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:38:37,879] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:38:37,879] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:38:37,879] : INFO : common :created directory at: artifacts/data_transformation]
+[2025-05-21 19:38:37,888] : INFO : data_transformation :Train and test data created]
+[2025-05-21 19:38:37,888] : INFO : data_transformation :(1199, 12)]
+[2025-05-21 19:38:37,888] : INFO : data_transformation :(400, 12)]
+[2025-05-21 19:38:37,888] : INFO : main :>>>>>> stage Data Transformation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:38:37,888] : INFO : main :>>>>>> stage Model Trainer stage started <<<<<<]
+[2025-05-21 19:38:37,889] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:38:37,889] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:38:37,890] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:38:37,890] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:38:37,890] : INFO : common :created directory at: artifacts/model_trainer]
+[2025-05-21 19:38:37,890] : ERROR : main :'ModelTrainerConfig' object has no attribute 'initiate_model_trainer']
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 44, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+AttributeError: 'ModelTrainerConfig' object has no attribute 'initiate_model_trainer'
+[2025-05-21 19:52:06,882] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:52:06,883] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:52:06,883] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:52:06,884] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:52:06,884] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:52:06,884] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:52:06,884] : INFO : data_ingestion :File already exists]
+[2025-05-21 19:52:06,885] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:52:06,885] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:52:06,886] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:52:06,887] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:52:06,887] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:52:06,887] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:52:06,887] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:52:06,891] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:52:06,891] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:52:06,892] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:52:06,892] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:52:06,893] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:52:06,893] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:52:06,893] : INFO : common :created directory at: artifacts/data_transformation]
+[2025-05-21 19:52:06,902] : INFO : data_transformation :Train and test data created]
+[2025-05-21 19:52:06,902] : INFO : data_transformation :(1199, 12)]
+[2025-05-21 19:52:06,902] : INFO : data_transformation :(400, 12)]
+[2025-05-21 19:52:06,902] : INFO : main :>>>>>> stage Data Transformation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:52:06,902] : INFO : main :>>>>>> stage Model Trainer stage started <<<<<<]
+[2025-05-21 19:52:06,903] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:52:06,903] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:52:06,904] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:52:06,904] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:52:06,904] : INFO : common :created directory at: artifacts/model_trainer]
+[2025-05-21 19:52:06,907] : ERROR : main :ElasticNet.__init__() got an unexpected keyword argument 'n_jobs']
+Traceback (most recent call last):
+  File "/home/sandeep/Desktop/MLops/datascience_project/main.py", line 43, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/model_trainer_pipleine.py", line 20, in initiate_model_trainer
+    raise e
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/pipeline/model_trainer_pipleine.py", line 18, in initiate_model_trainer
+    model_trainer.train()
+  File "/home/sandeep/Desktop/MLops/datascience_project/src/datascience_project/components/model_trainer.py", line 23, in train
+    lr =ElasticNet(alpha=self.config.alpha,l1_ratio=self.config.l1_ratio,n_jobs=-1,random_state=42)
+TypeError: ElasticNet.__init__() got an unexpected keyword argument 'n_jobs'
+[2025-05-21 19:52:38,895] : INFO : main :>>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-05-21 19:52:38,896] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:52:38,896] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:52:38,897] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:52:38,897] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:52:38,897] : INFO : common :created directory at: artifacts/data_ingestion]
+[2025-05-21 19:52:38,897] : INFO : data_ingestion :File already exists]
+[2025-05-21 19:52:38,898] : INFO : main :>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:52:38,898] : INFO : main :>>>>>> stage Data Validation stage started <<<<<<]
+[2025-05-21 19:52:38,899] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:52:38,899] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:52:38,900] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:52:38,900] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:52:38,900] : INFO : common :created directory at: artifacts/data_validation]
+[2025-05-21 19:52:38,904] : INFO : main :>>>>>> stage Data Validation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:52:38,904] : INFO : main :>>>>>> stage Data Transformation stage started <<<<<<]
+[2025-05-21 19:52:38,905] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:52:38,905] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:52:38,906] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:52:38,906] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:52:38,906] : INFO : common :created directory at: artifacts/data_transformation]
+[2025-05-21 19:52:38,914] : INFO : data_transformation :Train and test data created]
+[2025-05-21 19:52:38,914] : INFO : data_transformation :(1199, 12)]
+[2025-05-21 19:52:38,914] : INFO : data_transformation :(400, 12)]
+[2025-05-21 19:52:38,914] : INFO : main :>>>>>> stage Data Transformation stage completed <<<<<<
+
+x====================x]
+[2025-05-21 19:52:38,914] : INFO : main :>>>>>> stage Model Trainer stage started <<<<<<]
+[2025-05-21 19:52:38,915] : INFO : common :yaml file: config/config.yaml loaded successfully]
+[2025-05-21 19:52:38,916] : INFO : common :yaml file: params.yaml loaded successfully]
+[2025-05-21 19:52:38,916] : INFO : common :yaml file: schema.yaml loaded successfully]
+[2025-05-21 19:52:38,916] : INFO : common :created directory at: artifacts]
+[2025-05-21 19:52:38,916] : INFO : common :created directory at: artifacts/model_trainer]
+[2025-05-21 19:52:38,921] : INFO : model_trainer :Model trained and saved at artifacts/model_trainer]
+[2025-05-21 19:52:38,922] : INFO : main :>>>>>> stage Model Trainer stage completed <<<<<<
+
+x====================x]
