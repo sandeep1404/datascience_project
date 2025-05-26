@@ -16,10 +16,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME")
-os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD")
+# os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME")
+# os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD")
 
-os.environ["MLFLOW_TRACKING_URI"]= os.getenv("MLFLOW_TRACKING_URI")
+# os.environ["MLFLOW_TRACKING_URI"]= os.getenv("MLFLOW_TRACKING_URI")
 
 
 
